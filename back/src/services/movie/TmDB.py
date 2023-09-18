@@ -7,8 +7,9 @@ class TmDB:
 
     def __init__(self):
         self.base_url = get_settings().TMDB_API_URL
+        self.base_img_url = get_settings().TMDB_IMG_URL
 
-    def get_popular(self, page: int = 1) -> dict:
+    def get_TmDB_popular(self, page: int = 1) -> dict:
         uri = f"/movie/popular?language=en-US&page={page}"
         headers = {
             "accept": "application/json",

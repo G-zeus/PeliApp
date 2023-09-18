@@ -8,7 +8,7 @@ controller = Movie()
 
 @movies.get("/popular")
 def get_popular_movies(page: Union[int, None] = None):
-    return controller.get_popular(page=page)
+    return {"data": controller.get_popular(page=page)}
 
 
 @movies.get("/{id}")

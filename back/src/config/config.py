@@ -4,6 +4,7 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     TMDB_API_URL: str
+    TMDB_IMG_URL: str
     TMDB_AUTH_TOKEN: str
 
     class Config:
