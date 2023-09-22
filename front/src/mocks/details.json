@@ -1,0 +1,19 @@
+{
+  "data": {
+    "movie": {
+      "id": 500,
+      "title": "Reservoir Dogs",
+      "releaseYear": "1992",
+      "releaseDate": "1992-09-02",
+      "posterImage": "https://image.tmdb.org/t/p/w300/xi8Iu6qyTfyZVDVy60raIOYJJmk.jpg",
+      "backdropImage": "https://image.tmdb.org/t/p/w300/jqFjgNnxpXIXWuPsyfqmcLXRo9p.jpg",
+      "overview": "A botched robbery indicates a police informant, and the pressure mounts in the aftermath at a warehouse. Crime begets violence as the survivors -- veteran Mr. White, newcomer Mr. Orange, psychopathic parolee Mr. Blonde, bickering weasel Mr. Pink and Nice Guy Eddie -- unravel.",
+      "runtime": 99,
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
+      "averageRating": 8.133
+    }
+  }
+}
