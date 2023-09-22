@@ -30,8 +30,10 @@ class MovieTmDBDataAdapter(MovieData, TmDB):
                     "title": data["title"],
                     "releaseYear": data["release_date"][0:4],
                     "releaseDate": data["release_date"],
-                    "posterImage": self.base_img_url + data["poster_path"],
-                    "backdropImage": self.base_img_url + data["backdrop_path"],
+                    "posterImage": self.base_img_url + data["poster_path"] if data["poster_path"] is not None
+                    else self.img_default,
+                    "backdropImage": self.base_img_url + data["backdrop_path"] if data["backdrop_path"] is not None
+                    else self.img_default,
                     "overview": data["overview"],
                     "runtime": data["runtime"],
                     "genres": [v['name'] for v in data["genres"]],
@@ -47,7 +49,8 @@ class MovieTmDBDataAdapter(MovieData, TmDB):
                     "id": v["id"],
                     "title": v["title"],
                     "releaseYear": v["release_date"][0:4],
-                    "posterImage": self.base_img_url + v["poster_path"],
+                    "posterImage": self.base_img_url + v["poster_path"] if v["poster_path"] is not None
+                    else self.img_default,
                     "overview": v["overview"][0:100] + "..."
                 }
             )

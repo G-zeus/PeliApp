@@ -12,6 +12,7 @@ class TmDB:
             "accept": "application/json",
             "Authorization": get_settings().TMDB_AUTH_TOKEN
         }
+        self.img_default = "https://img1.pngdownload.id/20190701/eir/kisspng-web-framework-gin-software-framework-github-go-introduction-and-use-of-a-high-performance-golang-5d1ab631a14807.0111511215620316656606.jpg"
 
     def get_TmDB_popular(self, page: int = 1) -> dict:
         uri = f"/movie/popular?language=en-US&page={page}"
